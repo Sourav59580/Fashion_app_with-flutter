@@ -49,6 +49,13 @@ flutter:
     - images/w1.jpeg
     - images/w3.jpeg
     - images/w4.jpeg
+    - images/cats/accessories.png
+    - images/cats/dress.png
+    - images/cats/formal.png
+    - images/cats/informal.png
+    - images/cats/jeans.png
+    - images/cats/shoe.png
+    - images/cats/tshirt.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
