@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 import 'package:flutterfashion/component/horijontalList.dart';
+import 'package:flutterfashion/component/products.dart';
 
 void main(){
   runApp(MaterialApp(
@@ -128,12 +129,22 @@ class _HomePageState extends State<HomePage> {
 
           // padding category
           Padding(
-            padding: EdgeInsets.all(10),
+            padding: EdgeInsets.all(15),
             child: Text("Category",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
           ),
 
           //Horizontal list view
           HorijontalList(),
+
+          //recent view category
+          Padding(
+            padding: EdgeInsets.all(15),
+            child: Text("Recent products",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+          ),
+          Container(
+            height: 320,
+            child: Product(),
+          ),
 
         ],
       ),
