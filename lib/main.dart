@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+
+//My own import file
 import 'package:flutterfashion/component/horijontalList.dart';
 import 'package:flutterfashion/component/products.dart';
 
@@ -142,8 +144,8 @@ class _HomePageState extends State<HomePage> {
             child: Text("Recent products",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
           ),
           Container(
-            height: 320,
-            child: Product(),
+            height: 330,
+            child: Products(),
           ),
 
         ],
