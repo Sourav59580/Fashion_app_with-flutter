@@ -9,67 +9,67 @@ class Products extends StatefulWidget {
 class _ProductsState extends State<Products> {
   var productList = [
     {
-      "name" : "Blazer",
+      "name" : "Blazer1",
       "picture": "images/products/blazer1.jpeg",
       "oldPrice": 1800,
       "price": 1500
     },
     {
-      "name" : "Dress",
+      "name" : "Dress1",
       "picture": "images/products/dress1.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Blazer",
+      "name" : "Blazer2",
       "picture": "images/products/blazer2.jpeg",
       "oldPrice": 1800,
       "price": 1500
     },
     {
-      "name" : "Dress",
+      "name" : "Dress2",
       "picture": "images/products/dress2.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "Hills1",
       "picture": "images/products/hills1.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "h",
       "picture": "images/products/hills2.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "p",
       "picture": "images/products/pants1.jpg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "p2",
       "picture": "images/products/pants2.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "s1",
       "picture": "images/products/shoe1.jpg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "sk1",
       "picture": "images/products/skt1.jpeg",
       "oldPrice": 2300,
       "price": 1400
     },
     {
-      "name" : "Dress",
+      "name" : "sk2",
       "picture": "images/products/skt2.jpeg",
       "oldPrice": 2300,
       "price": 1400
@@ -113,7 +113,12 @@ class SingleProduct extends StatelessWidget {
         child: Material(
           child: InkWell(
             onTap: ()=>Navigator.of(context).push(MaterialPageRoute(
-              builder: (context)=> ProductSetails() )),
+              builder: (context)=> ProductDetails(
+                product_details_name: productName,
+                product_details_image: productImage,
+                product_details_new_price: productPrice,
+                product_details_old_price: productOldPrice,
+              ) )),
             child: GridTile(
               footer: Container(
                 color: Colors.white70,
